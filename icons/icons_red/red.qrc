@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="red">
+    <file>alert-octagon.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="xd">
+    <file>eye.svg</file>
+    <file>eye-off.svg</file>
+    <file>lock.svg</file>
+    <file>mail.svg</file>
+    <file>start-background.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="str_ustawienia_srodek">
+     <property name="minimumSize">
+      <size>
+       <width>700</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1600</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#powiadomienia, #motyw, #skroty_klawiszowe {
+	border-style:solid;
+	border-radius:15px;
+	border-width:2px;
+	border-color: #D9FAFF;
+}
+#btn_skroty_klawiszowe {
+	border-style:solid;
+	border-width:2px;
+	border-color:#019bff;
+	color:#019bff;
+}
+QComboBox {
+    background-color: white; /* Kolor tła */
+    border-style: solid;
+    border-width: 2px;
+    border-color: #019bff;
+    color: #019bff;
+    padding: 10px 20px;
+    border-radius: 15px; /* Zaokrąglenie krawędzi */
+}
+QComboBox:hover {
+    background-color: #E6E6FF; /* Kolor tła po najechaniu myszką */
+}
+QComboBox:pressed {
+    background-color: #CCCCFF; /* Kolor tła po kliknięciu */
+}
+QComboBox::drop-down {
+    width: 20px; /* Szerokość obszaru na strzałkę */
+    background-color: transparent; /* Przezroczysty kolor tła obszaru strzałki */
+    border: none; /* Brak obramowania dla obszaru strzałki */
+}
+QComboBox::down-arrow {
+    image: url(&quot;:/images/arrow_down.png&quot;); /* Użyj domyślnej ikony strzałki */
+}
+QComboBox QAbstractItemView {
+    /* Styl dla menu rozwijanej listy */
+    border: 2px solid #019bff; /* Grubość i kolor obramowania */
+	border-radius:15px;
+    background-color: white; /* Kolor tła */
+    color: #019bff; /* Kolor tekstu */
+    selection-background-color: #E6E6FF; /* Kolor tła po zaznaczeniu */
+	selection-color: #019bff;
+	padding:10px;
+}
+QComboBox QAbstractItemView::item {
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+    border-radius: 15px; /* Zaokrągla krawędzie elementów listy */
+}
+QFrame#srodek {
+	background-color:white;
+}
+QFrame#lewo, QFrame#prawo {
+	background-color: #E4FFFC;
+}
+QLabel {
+	color: #2c2c84;
+}
+QLineEdit {
+	border-style:solid;
+	border-radius:15px;
+	border-width:2px;
+	padding-left:10px;
+	padding-right:10px;
+	border-color:#c7dcff;
+	color: #2c2c84;
+}
+QLineEdit:focus {
+	border-color: #019bff;
+}
+QPushButton {
+	background-color: white; /* Kolor tła */
+	border: none; /* Brak obramowania */
+	color: white; /* Kolor czcionki */
+	padding: 10px 20px; /* Wielkość przycisku */
+	border-radius: 15px; /* Zaokrąglenie krawędzi */
+}
+QPushButton:hover {
+	background-color: #E6E6FF; /* Kolor tła po najechaniu myszką */
+}
+QPushButton:pressed {
+	background-color: #CCCCFF; /* Kolor tła po kliknięciu */
+}
+QPushButton#btn_usun_konto {
+	background-color: #ff4d4d;
+	color: white;
+}
+QPushButton:hover#btn_usun_konto {
+	background-color: #cc3333;
+}
+QPushButton:pressed#btn_usun_konto {
+	background-color: #993333;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>30</number>
+      </property>
+      <property name="topMargin">
+       <number>30</number>
+      </property>
+      <property name="rightMargin">
+       <number>60</number>
+      </property>
+      <property name="bottomMargin">
+       <number>30</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="ustawienia_aplikacji">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="lb_ustawienia_aplikacji">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>776</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>22</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ustawienia aplikacji</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="motyw">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QLabel" name="lb_ikona_motyw">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/icons_blue/sun.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lb_motyw">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Motyw</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_motyw">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>jasny</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ciemny</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>gradient</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="powiadomienia">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="lb_ikona_powiadomienia">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/icons_blue/bell.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lb_powiadomienia">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Powiadomienia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="combo_motyw_2">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>wszystkie</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ważne zadania</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>brak</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="skroty_klawiszowe">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="lb_ikona_klucz">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../icons/icons_blue/key.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lb_skroty_klawiszowe">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Skróty klawiszowe</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_skroty_klawiszowe">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string> Wyświetl</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../icons/icons_blue/info.svg</normaloff>../icons/icons_blue/info.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
